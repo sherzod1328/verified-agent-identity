@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: '2Voh7bSvrUda5HHGe2mz3RvuxqhGGT8TK96TQnrUZj'
+        description: 'did:iden3:billions:main:2Voh7bSvrUda5HHGe2mz3RvuxqhGGT8TK96TQnrUZj'
         required: true
-        default: '2Voh7bSvrUda5HHGe2mz3RvuxqhGGT8TK96TQnrUZj'
+        default: 'did:iden3:billions:main:2Voh7bSvrUda5HHGe2mz3RvuxqhGGT8TK96TQnrUZj'
       agent_description:
-        description: '2Voh7bSvrUda5HHGe2mz3RvuxqhGGT8TK96TQnrUZj'
+        description: 'did:iden3:billions:main:2Voh7bSvrUda5HHGe2mz3RvuxqhGGT8TK96TQnrUZj'
         required: true
-        default: '2Voh7bSvrUda5HHGe2mz3RvuxqhGGT8TK96TQnrUZj AI Agent'
+        default: 'did:iden3:billions:main:2Voh7bSvrUda5HHGe2mz3RvuxqhGGT8TK96TQnrUZj AI Agent'
 
 jobs:
   verify:
@@ -38,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "2Voh7bSvrUda5HHGe2mz3RvuxqhGGT8TK96TQnrUZj", "description": "2Voh7bSvrUda5HHGe2mz3RvuxqhGGT8TK96TQnrUZj AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "did:iden3:billions:main:2Voh7bSvrUda5HHGe2mz3RvuxqhGGT8TK96TQnrUZj", "description": "did:iden3:billions:main:2Voh7bSvrUda5HHGe2mz3RvuxqhGGT8TK96TQnrUZj AI Agent"}'
